@@ -1,0 +1,17 @@
+Name,warmBlooded,coldBlooded,GiveBirth,LayEggs,CanSwim,CanFly,HasLegs,HasScales,Class
+human,1,0,1,0,0,0,1,0,mammal
+python,0,1,0,1,0,0,0,1,reptile
+salmon,0,1,0,1,1,0,0,1,fish
+whale,1,0,1,0,1,0,0,0,mammal
+frog,0,1,0,1,1,0,1,0,amphibian
+komodo dragon,0,1,0,1,0,0,1,1,reptile
+bat,1,0,1,0,0,1,1,0,mammal
+pigeon,1,0,0,1,0,1,1,0,bird
+cat,1,0,1,0,0,0,1,0,mammal
+leopard shark,0,1,1,0,1,0,0,1,fish
+turtle,0,1,0,1,1,0,1,1,reptile
+penguin,1,0,0,1,1,0,1,0,bird
+porcupine,1,0,1,0,0,0,1,0,mammal
+eel,0,1,0,1,1,0,0,1,fish
+salamander,0,1,0,1,1,0,1,0,amphibian
+alligator,0,1,0,1,1,0,1,1,reptile
