@@ -131,3 +131,6 @@ dmypy.json
 .idea
 cnki_search_parser/*.csv
 cnki_search_parser/*.txt
+map_drawer/*.png
+map_drawer/*.html
+map_drawer/resources

@@ -86,6 +86,7 @@ def print_stats(stats_cnt=-1):
     for i in range(0, len(headers_stats_flag)):
         if headers_stats_flag[i]:
             print('[' + headers[i] + ']' + '统计结果：')
+            print('[' + headers[i] + ']' + '计数 = ' + str(len(headers_stats[i])))
             stats_current_cnt = 0
             for k, v in sorted(headers_stats[i].items(), key=lambda item: item[1], reverse=True):
                 print(k + ' = ' + str(v))
@@ -103,7 +104,7 @@ def print_grouped_stats():
             for k, v in sorted(headers_stats[i].items()):
                 grouped_stats.setdefault(v, []).append(k)
             for k, v in sorted(grouped_stats.items(), reverse=True):
-                print(str(k) + ' = ' + ', '.join(v))
+                print(str(k) + ' (计数：' + str(len(v)) + ')' + ' = ' + ', '.join(v))
             print()
 
 
@@ -113,6 +114,7 @@ def save_stats(stats_cnt=-1):
         for i in range(0, len(headers_stats_flag)):
             if headers_stats_flag[i]:
                 f.write('[' + headers[i] + ']' + '统计结果：' + '\n')
+                f.write('[' + headers[i] + ']' + '计数 = ' + str(len(headers_stats[i])) + '\n')
                 stats_current_cnt = 0
                 for k, v in sorted(headers_stats[i].items(), key=lambda item: item[1], reverse=True):
                     f.write(k + ' = ' + str(v) + '\n')
@@ -131,7 +133,7 @@ def save_grouped_stats():
                 for k, v in sorted(headers_stats[i].items()):
                     grouped_stats.setdefault(v, []).append(k)
                 for k, v in sorted(grouped_stats.items(), reverse=True):
-                    f.write(str(k) + ' = ' + ', '.join(v) + '\n')
+                    f.write(str(k) + ' (计数：' + str(len(v)) + ')' + ' = ' + ', '.join(v) + '\n')
                 f.write('\n')
 
 
@@ -160,6 +162,8 @@ if __name__ == '__main__':
     if print_stats_flag:
         print_stats(stats_user_cnt)
         print_grouped_stats()
+        # save_stats(stats_user_cnt)
+        # save_grouped_stats()
     else:
         save_stats(stats_user_cnt)
         save_grouped_stats()
