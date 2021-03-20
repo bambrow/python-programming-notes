@@ -6,7 +6,7 @@ echarts-china-counties-pypkg==0.0.2
 echarts-china-misc-pypkg==0.0.1
 echarts-china-provinces-pypkg==0.0.3
 echarts-countries-pypkg==0.1.6
-Jinja2==2.11.2
+Jinja2==2.11.3
 kiwisolver==1.2.0
 lml==0.0.9
 MarkupSafe==1.1.1
