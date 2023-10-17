@@ -134,3 +134,4 @@ cnki_search_parser/*.txt
 map_drawer/*.png
 map_drawer/*.html
 map_drawer/resources
+miscellaneous/*.txt

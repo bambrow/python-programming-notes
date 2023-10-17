@@ -87,6 +87,7 @@ def print_stats(stats_cnt=-1):
         if headers_stats_flag[i]:
             print('[' + headers[i] + ']' + '统计结果：')
             print('[' + headers[i] + ']' + '计数 = ' + str(len(headers_stats[i])))
+            print('[' + headers[i] + ']' + '总频次 = ' + str(sum(headers_stats[i].values())))
             stats_current_cnt = 0
             for k, v in sorted(headers_stats[i].items(), key=lambda item: item[1], reverse=True):
                 print(k + ' = ' + str(v))
@@ -115,6 +116,7 @@ def save_stats(stats_cnt=-1):
             if headers_stats_flag[i]:
                 f.write('[' + headers[i] + ']' + '统计结果：' + '\n')
                 f.write('[' + headers[i] + ']' + '计数 = ' + str(len(headers_stats[i])) + '\n')
+                f.write('[' + headers[i] + ']' + '总频次 = ' + str(sum(headers_stats[i].values())) + '\n')
                 stats_current_cnt = 0
                 for k, v in sorted(headers_stats[i].items(), key=lambda item: item[1], reverse=True):
                     f.write(k + ' = ' + str(v) + '\n')
