@@ -129,9 +129,9 @@ dmypy.json
 .pyre/
 
 .idea
-cnki_search_parser/*.csv
-cnki_search_parser/*.txt
-map_drawer/*.png
-map_drawer/*.html
-map_drawer/resources
-miscellaneous/*.txt
+python_practices/cnki_search_parser/*.csv
+python_practices/cnki_search_parser/*.txt
+python_others/map_drawer/*.png
+python_others/map_drawer/*.html
+python_others/map_drawer/resources
+python_practices/miscellaneous/*.txt
